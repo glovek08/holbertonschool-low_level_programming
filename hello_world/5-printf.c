@@ -5,7 +5,8 @@
  * Return: returns 0 if correct.
  */
 int main(void)
-{
-	printf("with proper grammar, but the outcome is a piece of art, ");
+{	
+	/* prints a string to the standard output */
+	printf("with proper grammar, but the outcome is a piece of art,");
 	return (0);
 }
