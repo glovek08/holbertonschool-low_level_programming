@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* main - Entry */
 
-/* return: 0 if success. */
+/**
+ * main - Entry point
+ *
+ * Return: returns 0 if succesful.
+ */
+
 int main(void)
 {
 	int n;
@@ -12,15 +16,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("is positive\n");
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("is zero\n");
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("is negative\n");
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
