@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(digitCode);
 		digitCode++;
-		if (digitCode == 57)
+		if (digitCode == 58)
 		{
 			digitCode = 97;
 		}
