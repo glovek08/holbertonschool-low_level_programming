@@ -8,15 +8,13 @@
 
 int main(void)
 {
-	int letterMayus = 65;
+	int letterMayus = 65, letterMinus = 97;
 
 	while (letterMayus <= 90)
 	{
 		putchar(letterMayus);
 		letterMayus++;
 	}
-	int letterMinus = 97;
-
 	while (letterMinus <= 122)
 	{
 		putchar(letterMinus);
