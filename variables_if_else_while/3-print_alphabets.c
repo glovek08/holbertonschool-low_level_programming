@@ -10,15 +10,15 @@ int main(void)
 {
 	int letterMayus = 65, letterMinus = 97;
 
-	while (letterMayus <= 90)
-	{
-		putchar(letterMayus);
-		letterMayus++;
-	}
 	while (letterMinus <= 122)
 	{
 		putchar(letterMinus);
 		letterMinus++;
+	}
+        while (letterMayus <= 90)
+        {
+                putchar(letterMayus);
+		letterMayus++;
 	}
 	putchar('\n');
 	return (0);
