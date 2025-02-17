@@ -15,9 +15,9 @@ int main(void)
 		putchar(letterMinus);
 		letterMinus++;
 	}
-        while (letterMayus <= 90)
-        {
-                putchar(letterMayus);
+	while (letterMayus <= 90)
+	{
+		putchar(letterMayus);
 		letterMayus++;
 	}
 	putchar('\n');
