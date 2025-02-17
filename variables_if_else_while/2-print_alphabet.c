@@ -15,5 +15,6 @@ int main(void)
 		putchar(letterNum);
 		letterNum++;
 	}
+	putchar('\n');
 	return (0);
 }
