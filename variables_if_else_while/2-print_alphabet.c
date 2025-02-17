@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int letterNum = 65;/* ASCII value of a = 65 */
+	int letterNum = 97;/* ASCII value of a = 65 */
 
 	while (letterNum <= 122)
 	{
