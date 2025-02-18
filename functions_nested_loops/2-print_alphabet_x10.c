@@ -15,9 +15,10 @@ void print_alphabet_x10(void)
 
 	for (times = 0; times < 10; times ++)
 	{
-		for (i = 97; i < 122; i++)
+		for (i = 97; i <= 122; i++)
         	{
                 	_putchar(i);
         	}
+		_putchar('\n');
 	}
 }
