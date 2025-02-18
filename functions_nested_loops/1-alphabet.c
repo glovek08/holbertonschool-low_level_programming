@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Return: returns 0 if succesful.
-*/
+ * print_alphabet - prints the alphabet in lowercase)
+ * 
+ * Return: void if successful.
+ */
 
-int main(void)
+void print_alphabet(void)
 {
 	int i = 97;
 
@@ -17,5 +17,4 @@ int main(void)
 		i++;
 	}
 	_putchar('\n');
-	return (0);
 }
