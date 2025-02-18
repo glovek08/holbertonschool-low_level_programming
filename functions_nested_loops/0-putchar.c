@@ -8,6 +8,14 @@
 
 int main(void)
 {
-    char string[50] = "_putchar";
+	char textSample[7] = "_putchar";
+	int i;
 
+	for (i = 0; i < 7; i++)
+	{
+		putchar(textSample[i]);
+		i++;
+	}
+	putchar(' ');
+	return (0);
 }
