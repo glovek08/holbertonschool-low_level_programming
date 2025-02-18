@@ -13,13 +13,11 @@ void print_alphabet_x10(void)
 
 	int times;
 
-	char sampleText[8] = "_putchar";
-
 	for (times = 0; times < 10; times ++)
 	{
-		for (i = 0; i < 8; i++)
+		for (i = 97; i < 122; i++)
         	{
-                	_putchar(sampleText[i]);
+                	_putchar(i);
         	}
 	}
 }
