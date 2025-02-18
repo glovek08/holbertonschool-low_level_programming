@@ -9,10 +9,10 @@
 
 int main(void)
 {
-	char textSample[7] = "_putchar";
+	char textSample[8] = "_putchar";
 	int i;
 
-	for (i = 0; i < 7; i++)
+	for (i = 0; i < 8; i++)
 	{
 		putchar(textSample[i]);
 		i++;
