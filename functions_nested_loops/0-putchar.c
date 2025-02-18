@@ -14,9 +14,9 @@ int main(void)
 
 	for (i = 0; i < 8; i++)
 	{
-		putchar(textSample[i]);
+		_putchar(textSample[i]);
 		i++;
 	}
-	putchar(' ');
+	_putchar(' ');
 	return (0);
 }
