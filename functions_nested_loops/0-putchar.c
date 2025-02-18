@@ -9,14 +9,12 @@
 
 int main(void)
 {
-	char textSample[8] = "_putchar";
+	char textSample[9] = "_putchar\n";
 	int i;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 9; i++)
 	{
 		_putchar(textSample[i]);
-		i++;
 	}
-	_putchar(' ');
 	return (0);
 }
