@@ -5,14 +5,27 @@
  *
  * Return: void.
  */
-
 void times_table(void)
 {
-	int i;
+	int i, MULTIPLIER = 9, result;
 
 	for (i = 0; i <= 10; i++)
 	{
-		_putchar((9 * i) + '0');
-		_putchar('\n');
+		result = MULTIPLIER * i;
+		if (result < 10)
+		{
+			_putchar('0' + result);
+		}
+		else
+		{
+			_putchar('0' + (result / 10));
+			_putchar('0' + (result % 10));
+		}
+		if (i < 10)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
+	_putchar('\n');
 }
