@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * times_table - prints the multiplication tables up to 9.
  *
@@ -17,16 +18,24 @@ void times_table(void)
 
 			if (result < 10)
 			{
+				_putchar(' ');
 				_putchar('0' + result);
+				if (j != 10)
+				{
+					_putchar(',');
+				}
 			}
 			else
 			{
 				_putchar('0' + (result / 10));
 				_putchar('0' + (result % 10));
+				if (j != 10)
+				{
+					_putchar(',');
+				}
 			}
 			if (j < 10)
 			{
-				_putchar(',');
 				_putchar(' ');
 			}
 		}
