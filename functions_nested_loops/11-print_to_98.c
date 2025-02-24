@@ -30,5 +30,6 @@ void print_to_98(int starterNum)
 	}
 	_putchar('9');
 	_putchar('8');
+	_putchar('\n');
 }
 
