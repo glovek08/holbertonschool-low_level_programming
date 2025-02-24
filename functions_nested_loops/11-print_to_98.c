@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * print_to_98 - Prints all natural numbers from starterNum to 98.
- * @starterNum: The starting number.
- */
+* print_to_98 - prints all natural numbers to a given target.
+* @starterNum: the starting number.
+* Return: void.
+*/
+
 void print_to_98(int starterNum)
 {
 	int target = 98;
@@ -13,23 +15,26 @@ void print_to_98(int starterNum)
 		if (starterNum < 0)
 		{
 			_putchar('-');
-			_putchar((-starterNum / 10) + '0' * (-starterNum >= 10));
+			if (-starterNum >= 100)
+				_putchar((-starterNum / 100) + '0');
+			if (-starterNum >= 10)
+				_putchar(((-starterNum / 10) % 10) + '0');
 			_putchar((-starterNum % 10) + '0');
 		}
 		else
 		{
-			if (starterNum >= 10)
-				_putchar((starterNum / 10) + '0' * (starterNum >= 100));
 			if (starterNum >= 100)
+				_putchar((starterNum / 100) + '0');
+			if (starterNum >= 10)
 				_putchar(((starterNum / 10) % 10) + '0');
 			_putchar((starterNum % 10) + '0');
 		}
-		_putchar(',');
-		_putchar(' ');
+		if (starterNum != target)
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
 		starterNum += (starterNum < target) ? 1 : -1;
 	}
-	_putchar('9');
-	_putchar('8');
 	_putchar('\n');
 }
-
