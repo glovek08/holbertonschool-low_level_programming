@@ -9,20 +9,27 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
-		putchar(' ');
 		if (i % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (i % 5 == 0)
+		if (i % 5 == 0)
 		{
 			printf("Buzz");
 		}
 		else if (i % 3 != 0 && i % 5 != 0)
 		{
 			printf("%i", i);
+		}
+		if (i != 100)
+		{
+			putchar(' ');
+		}
+		else
+		{
+			putchar('\n');
 		}
 	}
 	return (0);
