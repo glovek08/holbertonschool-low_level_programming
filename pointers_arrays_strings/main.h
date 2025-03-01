@@ -7,4 +7,5 @@ void print_rev(char *);
 void rev_string(char *);
 void puts2(char *);
 void puts_half(char *);
-int getStrLength(char *);
+void print_array(int *, int);
+
