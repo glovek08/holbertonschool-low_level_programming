@@ -17,14 +17,14 @@ void puts2(char *str)
 		catchEndCase[2] = catchEndCase[3];
 		catchEndCase[3] = *str;
 		catchEndCase[4] = '\0';
+		_putchar(*str);
 		if (catchEndCase[0] == 'a' &&
 				catchEndCase[1] == 'o' &&
 				catchEndCase[2] == 'u' &&
 				catchEndCase[3] == '.')
 		{
-			return;
+			break;
 		}
-		_putchar(*str);
 		str += 2;
 	}
 	_putchar('\n');
