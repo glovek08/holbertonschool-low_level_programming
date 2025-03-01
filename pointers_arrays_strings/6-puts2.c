@@ -6,6 +6,8 @@
  */
 void puts2(char *str)
 {
+	if (!*str)
+		return;
 	do {
 		_putchar(*str);
 		str += 2;
