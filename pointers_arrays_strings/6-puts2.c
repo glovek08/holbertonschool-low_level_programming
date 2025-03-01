@@ -8,9 +8,10 @@ void puts2(char *str)
 {
 	if (!*str)
 		return;
-	do {
+	while (*str)
+	{
 		_putchar(*str);
 		str += 2;
-	} while (*str);
+	}
 	_putchar('\n');
 }
