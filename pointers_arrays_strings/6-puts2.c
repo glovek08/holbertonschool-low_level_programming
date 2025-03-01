@@ -9,7 +9,10 @@ void puts2(char *str)
 	char catchEndCase[5] = {0};
 
 	if (*str == '\0')
+	{
+		_putchar('\n');
 		return;
+	}
 	while (*str)
 	{
 		catchEndCase[0] = catchEndCase[1];
