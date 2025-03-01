@@ -10,5 +10,5 @@ char *firstChar = str;
 
 while (*str)
 str++;
-return (firstChar - str);
+return (str - firstChar);
 }
