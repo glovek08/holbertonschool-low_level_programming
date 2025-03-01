@@ -10,10 +10,10 @@ char *strEnd = str;
 
 while (*strEnd)
 end++;
-while (end > str)
+while (strEnd > str)
 {
-end--;
-_putchar(*end);
+strEnd--;
+_putchar(*strEnd);
 }
 _putchar('\n');
 return;
