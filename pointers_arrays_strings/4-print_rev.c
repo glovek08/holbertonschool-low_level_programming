@@ -9,7 +9,7 @@ void print_rev(char *str)
 char *strEnd = str;
 
 while (*strEnd)
-end++;
+strEnd++;
 while (strEnd > str)
 {
 strEnd--;
