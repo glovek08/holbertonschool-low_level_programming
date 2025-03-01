@@ -6,7 +6,7 @@
  */
 void puts2(char *str)
 {
-	if (*str == "")
+	if (*str == '\0')
 		return;
 	while (*str)
 	{
