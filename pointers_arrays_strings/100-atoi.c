@@ -10,9 +10,11 @@ int _atoi(char *str)
 {
 	bool isNegative = false;
 	int strIntValue = 0;
-
+	
 	while (isspace(*str))
+	{
 		str++;
+	}
 	while (*str == '+' || *str == '-' || isspace(*str))
 	{
 		if (*str == '-')
@@ -21,17 +23,14 @@ int _atoi(char *str)
 		}
 		str++;
 	}
-	while (*str != '\0')
+	while (*str != '\0' && !isdigit(*str))
 	{
-		while (*str != '\0' && !isdigit(*str))
-		{
-			str++;
-		}
-		while (isdigit(*str))
-		{
-			strIntValue = strIntValue * 10 + (*str - '0');
-			str++;
-		}
+		str++;
+	}
+	while (isdigit(*str))
+	{
+		strIntValue = strIntValue * 10 + (*str - '0');
+		str++;
 	}
 	return isNegative ? -strIntValue : strIntValue;
 }
