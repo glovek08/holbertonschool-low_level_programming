@@ -7,22 +7,18 @@
  */
 int _atoi(char *str)
 {
-	bool isNegative = false;
+	bool isNegative = false, isMathSymbol = false;
 	int strIntValue = 0;
 
-	while (*str == '+' || *str == '-')
+	while (*str == ' ') 
+		str++;
+	if (*str == '-')
 	{
-		if (*str == '-')
-		{
-			isNegative = true;
-			str++;
-		}
-		else if (*str == '+')
-		{
-			isNegative = false;
-			str++;
-		}
+		isNegative = true;
+		str++;
 	}
+	while (*str == '+' || *str == '-')
+		str++;
 	while (*str >= '0' && *str <= '9')
 	{
 		strIntValue = strIntValue * 10 + (*str - '0');
