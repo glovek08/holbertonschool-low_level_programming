@@ -9,7 +9,6 @@ char *cap_string(char *str)
 	int i = 0, j = 0;
 	char check_symbols[13] = {' ', '\t', '\n', ',', ';', '.',
 	'!', '?', '"', '(', ')', '{', '}'};
-
 	if (str[i] >= 'a' && str[i] <= 'z')
 	{
 		str[i] -= 32;
@@ -21,8 +20,7 @@ char *cap_string(char *str)
 			if (str[i] == check_symbols[j])
 			{
 				i++;
-				while (str[i] && !(str[i] >= 'a' && str[i] <= 'z') &&
-				!(str[i] >= 'A' && str[i] <= 'Z'))
+				while (str[i] && !(str[i] >= 'a' && str[i] <= 'z'))
 				{
 					i++;
 				}
