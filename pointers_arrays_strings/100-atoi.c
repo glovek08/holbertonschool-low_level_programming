@@ -30,11 +30,11 @@ int _atoi(char *str)
 	}
 	while (isdigit(*str))
 	{
-		strIntValue = strIntValue * 10 + (*str - '0');
 		if (strIntValue <= INT_MIN)
 			return (INT_MIN);
 		else if (strIntValue >= INT_MAX)
 			return (INT_MAX);
+		strIntValue = strIntValue * 10 + (*str - '0');
 		str++;
 	}
 	return (isNegative ? -strIntValue : strIntValue);
