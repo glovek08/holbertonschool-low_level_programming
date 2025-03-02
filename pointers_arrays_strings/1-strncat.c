@@ -1,10 +1,13 @@
 #include "main.h"
 /**
- *
- *
- *
+ * _strncat - concatenates two strings similar to strcat but it uses at most
+ * 'n' bytes from 'src'.
+ * @dest: the destination string.
+ * @src: the source string.
+ * @n: the limit amount of bytes.
+ * Return: the pointer to the destination.
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int destLength, srcLength;
 
@@ -12,7 +15,7 @@ char *_strcat(char *dest, char *src, int n)
 		;
 	for (srcLength = 0; srcLength < n; srcLength++)
 	{
-		dest[destLength = src[srcLength];
+		dest[destLength] = src[srcLength];
 		destLength++;
 	}
 	dest[destLength] = '\0';
