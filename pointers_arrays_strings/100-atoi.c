@@ -10,7 +10,7 @@ int _atoi(char *str)
 	bool isNegative = false;
 	int strIntValue = 0;
 
-	while (*str)
+	while (*str == '+' || *str == '-')
 	{
 		if (*str == '-')
 		{
