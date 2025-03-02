@@ -17,6 +17,8 @@ int _atoi(char *str)
 		if (*str == '-')
 			isNegative = !isNegative;
 		str++;
+		while (*str == ' ' || !(*str >= '0' && *str <= 9))
+			str++;
 	}
 	while (*str == ' ')
 		str++;
