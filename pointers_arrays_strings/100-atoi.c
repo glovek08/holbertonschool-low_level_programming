@@ -15,6 +15,8 @@ int _atoi(char *str)
 		isNegative = true;
 		str++;
 	}
+	else if (*str == '+')
+		str++;
 	while (*str >= '0' && *str <= '9')
 	{
 		strIntValue = strIntValue * 10 + (*str - '0');
