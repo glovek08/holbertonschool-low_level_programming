@@ -7,15 +7,15 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int destLength, srcIndex;
+	int dest_length, src_index;
 
-	for (destLength = 0; dest[destLength]; destLength++)
+	for (dest_length = 0; dest[dest_length]; dest_length++)
 		;
-	for (srcIndex = 0; src[srcIndex]; srcIndex++)
+	for (src_index = 0; src[src_index]; src_index++)
 	{
-		dest[destLength] = src[srcIndex];
-		destLength++;
+		dest[dest_length] = src[src_index];
+		dest_length++;
 	}
-	dest[destLength] = '\0';
+	dest[dest_length] = '\0';
 	return (dest);
 }
