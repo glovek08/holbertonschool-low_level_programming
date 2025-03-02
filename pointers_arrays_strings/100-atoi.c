@@ -7,7 +7,7 @@
  */
 int _atoi(char *str)
 {
-	bool isNegative = false, isMathSymbol = false;
+	bool isNegative = false;
 	int strIntValue = 0;
 
 	while (*str == ' ') 
