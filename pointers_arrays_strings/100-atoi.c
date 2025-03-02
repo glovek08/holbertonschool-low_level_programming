@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdbool.h>
 #include <ctype.h>
+#include <limits.h>
 /**
  * _atoi = converts a giving string into an integer.
  * @str: the given string.
