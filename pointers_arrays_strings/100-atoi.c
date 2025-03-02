@@ -12,14 +12,14 @@ int _atoi(char *str)
 
 	while (*str == ' ')
 		str++;
-	while (*str == '+' || *str == '-')
+	while (*str == '+' || *str == '-' || *str == ' ')
 	{
 		if (*str == '-')
 			isNegative = true;
 		str++;
-		if (*str == ' ')
-			str++;
 	}
+	while (*str == ' ')
+		str++;
 	while (*str >= '0' && *str <= '9')
 	{
 		strIntValue = strIntValue * 10 + (*str - '0');
