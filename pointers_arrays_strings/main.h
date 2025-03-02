@@ -10,4 +10,5 @@ void puts_half(char *);
 void print_array(int *, int);
 char *_strcpy(char *, char *);
 int _atoi(char *);
+char *_strcat(char *, char *);
 
