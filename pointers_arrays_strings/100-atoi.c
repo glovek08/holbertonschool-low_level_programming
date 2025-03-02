@@ -10,7 +10,7 @@ int _atoi(char *str)
 {
 	bool isNegative = false;
 	int strIntValue = 0;
-	
+
 	while (isspace(*str))
 	{
 		str++;
@@ -30,7 +30,11 @@ int _atoi(char *str)
 	while (isdigit(*str))
 	{
 		strIntValue = strIntValue * 10 + (*str - '0');
+		if (strIntValue <= INT_MIN)
+			return (INT_MIN);
+		else if (strIntValue >= INT_MAX)
+			return (INT_MAX);
 		str++;
 	}
-	return isNegative ? -strIntValue : strIntValue;
+	return (isNegative ? -strIntValue : strIntValue);
 }
