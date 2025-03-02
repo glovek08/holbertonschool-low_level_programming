@@ -11,19 +11,25 @@ char *cap_string(char *str)
 	'!', '?', '"', '(', ')', '{', '}'};
 
 	if (str[i] >= 'a' && str[i] <= 'z')
+	{
 		str[i] -= 32;
+	}
 	for (; str[i]; i++)
 	{
-		for (; j < 13; j++)
+		for (j = 0; j < 13; j++)
 		{
 			if (str[i] == check_symbols[j])
 			{
 				i++;
-				while (str[i] && ((str[i] >= 'a' && str[i] <= 'z')
-				|| (str[i] >= 'A' && str[i] <= 'Z')))
+				while (str[i] && !(str[i] >= 'a' && str[i] <= 'z') &&
+				!(str[i] >= 'A' && str[i] <= 'Z'))
+				{
 					i++;
+				}
 				if (str[i] >= 'a' && str[i] <= 'z')
+				{
 					str[i] -= 32;
+				}
 				break;
 			}
 		}
