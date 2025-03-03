@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * leet - encrypts a string into leet LEEEEEET!! ( ͡° ͜ʖ ͡°).
- * @str: the string to be encrypted ( ͡° ͜ʖ ͡°).
- * Return: the string pointer ( ͡° ͜ʖ ͡°).
+ * leet - 3ncrypts a str1ng 1nt0 1337 13333337!! ( ͡° ͜ʖ ͡°).
+ * @str: th3 str1ng t0 b3 3ncrypt3d ( ͡° ͜ʖ ͡°).
+ * Return: th3 str1ng p01nt3r ( ͡° ͜ʖ ͡°).
  */
 char *leet(char *str)
 {
