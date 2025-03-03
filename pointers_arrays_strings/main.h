@@ -1,3 +1,6 @@
+#ifndef TEST_H
+#define TEST_h
+
 int _putchar(char);
 void reset_to_98(int *);
 void swap_int(int *, int*);
@@ -19,3 +22,4 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 char *_memset(char *s, char b, unsigned int n);
+#endif
