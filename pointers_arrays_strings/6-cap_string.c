@@ -6,28 +6,24 @@
  */
 char *cap_string(char *str)
 {
-	int i = 0, j = 0;
-	char check_symbols[13] = {' ', '\t', '\n', ',', ';', '.',
-	'!', '?', '"', '(', ')', '{', '}'};
+	int i = 0, j;
+	char check_symbols[13] = {' ', '\t', '\n', ',', ';', '.', '!',
+	'?', '"', '(', ')', '{', '}'};
+
 	if (str[i] >= 'a' && str[i] <= 'z')
 	{
 		str[i] -= 32;
 	}
-	for (; str[i]; i++)
+
+	for (i = 1; str[i]; i++)
 	{
 		for (j = 0; j < 13; j++)
 		{
-			if (str[i] == check_symbols[j])
+			if (str[i - 1] == check_symbols[j] && str[i] >= 'a' && str[i] <= 'z')
 			{
-				i++;
-				while (str[i] && !(str[i] >= 'a' && str[i] <= 'z'))
+				if (!(str[i - 1] >= '0' && str[i - 1] <= '9'))
 				{
-					i++;
-				}
-				if ((str[i] >= 'a' && str[i] <= 'z'))
-				{
-					if (!(str[i - 1] >= '0' && str[i - 1] <= '9'))
-						str[i] -= 32;
+					str[i] -= 32;
 				}
 				break;
 			}
@@ -35,3 +31,4 @@ char *cap_string(char *str)
 	}
 	return (str);
 }
+
