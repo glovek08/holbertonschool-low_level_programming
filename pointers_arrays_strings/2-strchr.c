@@ -10,14 +10,14 @@
 */
 char *_strchr(char *str, char ch)
 {
-	    int i = 0;
+	int i = 0;
 
-	    for (; i < sizeof(str); i++)
-	    {
+	for (; str[i] != '\0'; i++)
+	{
 		if (str[i] == ch)
 		{
-		    return (str);
+		return (str);
 		}
-	    }
-    return (NULL);
+	}
+	return (NULL);
 }
