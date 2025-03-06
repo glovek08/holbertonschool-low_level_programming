@@ -28,7 +28,8 @@ char *cap_string(char *);
 char *leet(char *);
 char *_memset(char *, char, unsigned int);
 char *_memcpy(char *, char *, unsigned int);
-char *_strchr(char *s, char c);
+char *_strchr(char *, char);
+char *_strpbrk(char *, char *);
 
 /* unsigned int functions */
 unsigned int _strspn(char *, char *);
