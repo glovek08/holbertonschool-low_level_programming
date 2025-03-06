@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * strpbrk - searches a string for any of a set of bytes.
  * @str: the string to be evaluated.
