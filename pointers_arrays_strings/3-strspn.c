@@ -13,16 +13,20 @@ unsigned int _strspn(char *str, char *accept)
 {
 	unsigned int num_bytes = 0;
 	bool isMatch = false;
+	char *temp_accept;
 
 	for (; *str; str++)
 	{
-		for (; *accept; accept++)
+		isMatch = 0;
+		temp_accept = accept;
+		while (*temp_accept)
 		{
-			if (*str == *accept)
+			if (*str == *temp_accept)
 			{
-				isMatch = true;
+				isMatch = 1;
 				break;
 			}
+			temp_accept++;
 		}
 		if (isMatch)
 			num_bytes++;
@@ -31,4 +35,3 @@ unsigned int _strspn(char *str, char *accept)
 	}
 	return (num_bytes);
 }
-
