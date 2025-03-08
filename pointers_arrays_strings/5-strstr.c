@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strstr - searches for a subtstring ocurrance in a given string.
  * @haystack: the given string.
