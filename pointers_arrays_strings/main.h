@@ -30,6 +30,7 @@ char *_memset(char *, char, unsigned int);
 char *_memcpy(char *, char *, unsigned int);
 char *_strchr(char *, char);
 char *_strpbrk(char *, char *);
+char *_strstr(char *, char *);
 
 /* unsigned int functions */
 unsigned int _strspn(char *, char *);
