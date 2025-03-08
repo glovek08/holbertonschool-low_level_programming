@@ -8,7 +8,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *ocurrance = '\0';
+	char *ocurrance = NULL;
 	int match = 0;
 
 	for (; *haystack; haystack++)
