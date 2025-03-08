@@ -11,6 +11,7 @@ void puts2(char *);
 void puts_half(char *);
 void print_array(int *, int);
 void reverse_array(int *, int);
+void print_chessboard(char (*a)[8]);
 
 /* int functions */
 int _putchar(char);
