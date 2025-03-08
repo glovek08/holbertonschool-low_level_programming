@@ -12,8 +12,10 @@ char *_strstr(char *haystack, char *needle)
 	char *ocurrance = NULL;
 	int match = 0;
 
+	/* Handle empty needle - return haystack as per C standard */
 	if (*needle == '\0')
 		return haystack;
+
 	for (; *haystack; haystack++)
 	{
 		if (*haystack == *needle)
