@@ -15,9 +15,9 @@ void print_diagsums(int *arr, int size)
 	{
 		diag_A += arr[i * size + i];
 	}
-	for (; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
-		diag_B += *((arr + i * size) + (size - 1 - i)) + diag_A;
+		diag_B += *((arr + i * size) + (size - 1 - i));
 	}
 	printf("%i, %i", diag_A, diag_B);
 }
