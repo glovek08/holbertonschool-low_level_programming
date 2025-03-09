@@ -11,13 +11,17 @@ int _sqrt_recursion(int num)
 
 	if (factor * factor > num)
 		return (product);
-	while (num % factor == 0)
+
+	if (num % factor > num)
 	{
-		num = factor / num;
+		num = num / factor;
 		i++;
+		return (_sqrt_recursion(num));
 	}
+
 	if (i >= 2)
 		product *= factor;
 	factor++;
+
 	return (_sqrt_recursion(num));
 }
