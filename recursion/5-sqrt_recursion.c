@@ -14,7 +14,7 @@ int _sqrt_recursion(int num)
 
 	if (num % factor > num)
 	{
-		num = num / factor;
+		num = factor / num;
 		i++;
 		return (_sqrt_recursion(num));
 	}
