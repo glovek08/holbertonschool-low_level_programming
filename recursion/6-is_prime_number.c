@@ -9,6 +9,8 @@ int is_prime_number(int num)
 {
 	if (num < 2)
 		return (0);
+	if (num == 2 || num 3)
+		return (1);
 	if (num % 2 == 0 || num % 3 == 0)
 		return (0);
 	if (num % 5 == 0 || num % (5 + 2) == 0)
