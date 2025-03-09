@@ -7,21 +7,17 @@
  */
 int _sqrt_recursion(int num)
 {
-	int factor = 2, product = 1, i = 0;
+	int factor = 2, product = 1;
 
 	if (factor * factor > num)
 		return (product);
 
-	if (num % factor > num)
+	if (num % factor == 0)
 	{
-		num = factor / num;
-		i++;
+		num = num / factor;
+		product *= factor;
 		return (_sqrt_recursion(num));
 	}
-
-	if (i >= 2)
-		product *= factor;
 	factor++;
-
 	return (_sqrt_recursion(num));
 }
