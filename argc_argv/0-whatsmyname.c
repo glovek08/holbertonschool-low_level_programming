@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * whoami - prints the program's name.
+ * main - prints the program's name.
+ * @argc: arguments counter.
+ * @argv: arguments vector.
  * Return: 0 if successful.
  */
 int main(int argc, char **argv)
