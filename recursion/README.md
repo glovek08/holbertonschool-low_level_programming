@@ -1,5 +1,11 @@
 <h1> Recursion </h1>
 <h3>To understand recursion one must understand recursion.</h3>
+<h3>Learning objectives:</h3>
+
+* What is recursion.
+* How to implement it.
+* In what situation should I use it.
+* In which I shouldn't.
 
 **0-puts_recursion**: prints a string. <br />
 **1-print_rev_recusion**: prints a string backwards. <br />
