@@ -25,6 +25,11 @@ int main(int argc, char **argv)
 		j = 0;
 		while (arg[j])
 		{
+			if (arg[j] < 48 || arg[j] > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
 			num = num * 10 + (arg[j] - '0');
 			j++;
 		}
