@@ -7,13 +7,24 @@
  */
 int main(int argc, char **argv)
 {
+	int num1 = 0, num2 = 0;
+	int i = 0;
+
 	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	int num1 = argv[1], num2 = argv[2];
-	
-	printf("%i", (num1 * num2));
-	return (num1 * num2);
+	while (argv[1][i])
+	{
+		num1 = num1 * 10 + (argv[1][i] - '0');
+		i++;
+	}
+	while (argv[2][i])
+	{
+		num2 = num2 * 10 + (argv[2][i] - '0');
+		i++;
+	}
+	printf("%i\n", num1 * num2);
+	return (0);
 }
