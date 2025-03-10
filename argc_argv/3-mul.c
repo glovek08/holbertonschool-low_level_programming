@@ -20,6 +20,7 @@ int main(int argc, char **argv)
 		num1 = num1 * 10 + (argv[1][i] - '0');
 		i++;
 	}
+	i = 0;
 	while (argv[2][i])
 	{
 		num2 = num2 * 10 + (argv[2][i] - '0');
