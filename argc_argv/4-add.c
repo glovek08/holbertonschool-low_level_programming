@@ -21,9 +21,11 @@ int main(int argc, char **argv)
 	while (i < argc)
 	{
 		arg = argv[i];
+		num = 0;
+		j = 0;
 		while (arg[j])
 		{
-			num *= 10 + (arg[j] - '0');
+			num = num * 10 + (arg[j] - '0');
 			j++;
 		}
 		result += num;
