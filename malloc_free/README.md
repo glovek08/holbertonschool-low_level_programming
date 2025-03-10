@@ -8,8 +8,8 @@
 * Know when to use them.
 * How to use *valgrind* to check for memory leaks.
 
-**0-create_array**: creates an array of chars and initializes it with a specific cha
-**1-strdup**: returns a pointer to a newly allocated space in memory which contains a copy of the string given as a parameter.
-**2-str_concat**: concatenates two strings.
-**3-alloc_grid**: returns a pointer to a 2-d array of ints.
-**4-free_grid**: frees the 2d array created with **3-alloc_grid**.
+**0-create_array**: creates an array of chars and initializes it with a specific character. <br />
+**1-strdup**: returns a pointer to a newly allocated space in memory which contains a copy of the string given as a parameter. <br />
+**2-str_concat**: concatenates two strings. <br />
+**3-alloc_grid**: returns a pointer to a 2-d array of ints. <br />
+**4-free_grid**: frees the 2d array created with **3-alloc_grid**. <br />
