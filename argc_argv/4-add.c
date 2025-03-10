@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include "stddef.h"
 /**
  * main - prints the result of adding two positive numbers.
  * @argc: arguments counter.
@@ -10,7 +11,7 @@ int main(int argc, char **argv)
 	int result = 0;
 	int num = 0;
 	int i = 0, j = 0;
-	char *arg = '\0';
+	char *arg = NULL;
 
 	if (argc < 2)
 	{
