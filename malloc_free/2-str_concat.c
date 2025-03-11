@@ -12,10 +12,8 @@ char *str_concat(char *str_1, char *str_2)
 	unsigned int str_1_length = 0, str_2_length = 0, i = 0;
 	char *new_str;
 
-	if (str_1 == NULL || str_2 == NULL)
-	{
+	if (str_1 == NULL && str_2 == NULL)
 		return (NULL);
-	}
 
 	while (str_1[str_1_length])
 		str_1_length++;
