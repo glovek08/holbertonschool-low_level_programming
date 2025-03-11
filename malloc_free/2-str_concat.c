@@ -14,6 +14,10 @@ char *str_concat(char *str_1, char *str_2)
 
 	if (str_1 == NULL && str_2 == NULL)
 		return (NULL);
+	else if (str_1 == NULL)
+		str_1 = "";
+	else if (str_2 == NULL)
+		str_2 = "";
 
 	while (str_1[str_1_length])
 		str_1_length++;
