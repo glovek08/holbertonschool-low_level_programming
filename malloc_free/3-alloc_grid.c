@@ -11,14 +11,23 @@
 int **alloc_grid(int width, int height)
 {
 	int **new_grid = (void*)0;
+	unsigned int i = 0, j = 0;
 
 	if (!height || !width)
 		return (NULL);
 	
-	new_grid = calloc(width * height, sizeof(int));
+	new_grid = malloc(((width * height) + 1), sizeof(int));
 
 	if (!new_grid)
 		return (NULL);
+
+	for (; i < sizeof(new_grid[] / sizeof(new_grid[0])); i++)
+	{
+		for (; j < sizeof(new_grid[0] / sizeof(new_grid[0][0])); j++)
+		{
+			new_grid[i][j] = '0';
+		}
+	}
 
 	return (new_grid);
 }
