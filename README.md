@@ -26,6 +26,7 @@ IDE? That's for noobs, for this project I'll be using **EMACS** and **Vim** as m
 - [Pointers and Arrays](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/pointers_arrays_strings)
 - [Recursion](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/recursion)
 - [main() Arguments](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/argc_argv)
+- [Dynamic Memory Allocation](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/malloc_free)
 
 
 Soooo I broke betty somewhere during my vim config, sorry for the messy code, she doesn't like indent. ¯\_(ツ)_/¯
