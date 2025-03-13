@@ -12,9 +12,9 @@ char *str_concat(char *str_1, char *str_2)
 	unsigned int str_1_length = 0, str_2_length = 0, i = 0;
 	char *new_str;
 
-	if (str_1 == NULL)
+	if (!str_1)
 		str_1 = "";
-	else if (str_2 == NULL)
+	else if (!str_2)
 		str_2 = "";
 
 	while (str_1[str_1_length])
@@ -26,12 +26,12 @@ char *str_concat(char *str_1, char *str_2)
 	if (new_str == NULL)
 		return (NULL);
 
-	for (i = 0; i < str_1_length; i++)
+	for (; i < str_1_length; i++)
 		new_str[i] = str_1[i];
 
 	for (i = 0; i < str_2_length; i++)
 		new_str[str_1_length + i] = str_2[i];
-	new_str[str_1_length + str_2_length] = '\0';
+	new_str[str_1_length + str_2_length] = (void *)0;
 
 	return (new_str);
 }
