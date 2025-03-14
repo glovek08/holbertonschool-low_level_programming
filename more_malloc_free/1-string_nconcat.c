@@ -15,13 +15,11 @@
 char *string_nconcat(char *dest, char *src, unsigned int n)
 {
 	char *new_str = (void *)0;
-	unsigned int src_len = 0;
-	unsigned int dest_len = 0;
-	unsigned int i = 0;
+	unsigned int dest_len = 0, src_len = 0, i = 0;
 
 	if (!dest)
 		dest = "";
-	else if (!src)
+	if (!src)
 		src = "";
 
 	while (src[src_len])
