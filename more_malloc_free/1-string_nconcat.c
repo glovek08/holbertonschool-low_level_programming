@@ -35,7 +35,10 @@ char *string_nconcat(char *dest, char *src, unsigned int n)
 	if (!new_str)
 		return (NULL);
 
-	for (; i < n; i++)
+	for (; i  dest_len; i++)
+		new_str[i] = dest_len[i];
+
+	for (i = 0; i < n; i++)
 	{
 		new_str[dest_len + i] = src[i];
 	}
