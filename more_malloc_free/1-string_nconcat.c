@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
 /**
  * string_nconcat - Concatenates a string into another string, allocating
  *                  a new memory block for the result.
@@ -15,7 +17,7 @@ char *string_nconcat(char *dest, char *src, unsigned int n)
 	char *new_str = (void *)0;
 	unsigned int src_len = 0;
 	unsigned int dest_len = 0;
-	int i = 0;
+	unsigned int i = 0;
 
 	if (!dest)
 		dest = "";
