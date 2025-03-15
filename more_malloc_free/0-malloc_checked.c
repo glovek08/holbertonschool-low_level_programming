@@ -9,7 +9,6 @@ void *malloc_checked(unsigned int size)
 {
 	char *mem_block = malloc(size * sizeof(*mem_block));
 
-	if (!mem_block)
-		exit(98);
+	if (!mem_block) exit(98);
 	return (mem_block);
 }
