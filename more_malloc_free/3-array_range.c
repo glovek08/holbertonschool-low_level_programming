@@ -14,6 +14,8 @@ int *array_range(int start, int end)
 
 	if (start > end)
 		return (NULL);
+	if (start < 0)
+		start = 0 ;
 
 	arr_range = malloc(sizeof(int) * (start + end + 1));
 	if (!arr_range)
