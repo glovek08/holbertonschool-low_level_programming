@@ -12,15 +12,18 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggy;
-	char name_cpy = *name, owner_cpy = *owner;
+	char *name_cpy = (void *)0, *owner_cpy = (void *)0;
+
+	memcpy(name_cpy, name, sizeof(*name));
+	memcpy(owner_cpy, owner, sizeof(*owner));
 
 	doggy = malloc(sizeof(dog_t));
 	if (!doggy)
 		return (NULL);
 
-	doggy->name = &name_cpy;
+	doggy->name = name_cpy;
 	doggy->age = age;
-	doggy->owner = &owner_cpy;
+	doggy->owner = owner_cpy;
 
 	return (doggy);
 }
