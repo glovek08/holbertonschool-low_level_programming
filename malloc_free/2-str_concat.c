@@ -12,26 +12,14 @@ char *str_concat(char *str_1, char *str_2)
 	unsigned int str_1_length = 0, str_2_length = 0, i = 0;
 	char *new_str;
 
-	if (!str_1)
-		str_1 = "";
-	else if (!str_2)
-		str_2 = "";
-
-	while (str_1[str_1_length])
-		str_1_length++;
-	while (str_2[str_2_length])
-		str_2_length++;
-
+	if (!str_1) str_1 = "";
+	else if (!str_2) str_2 = "";
+	while (str_1[str_1_length]) str_1_length++;
+	while (str_2[str_2_length]) str_2_length++;
 	new_str = malloc(sizeof(char) * (str_1_length + str_2_length + 1));
-	if (new_str == NULL)
-		return (NULL);
-
-	for (; i < str_1_length; i++)
-		new_str[i] = str_1[i];
-
-	for (i = 0; i < str_2_length; i++)
-		new_str[str_1_length + i] = str_2[i];
+	if (!new_str) return ((void *)0);
+	for (; i < str_1_length; i++) new_str[i] = str_1[i];
+	for (i = 0; i < str_2_length; i++) new_str[str_1_length + i] = str_2[i];
 	new_str[str_1_length + str_2_length] = (void *)0;
-
 	return (new_str);
 }
