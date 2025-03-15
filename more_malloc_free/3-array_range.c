@@ -17,11 +17,11 @@ int *array_range(int start, int end)
 	if (start < 0)
 		start = 0 ;
 
-	arr_range = malloc(sizeof(int) * (start + end + 1));
+	arr_range = malloc(sizeof(int) * (end - start + 1));
 	if (!arr_range)
 		return (NULL);
 
-	for (; i < (start + end + 1); i++)
+	for (; i < (end - start + 1); i++)
 	{
 		arr_range[i] = start + i;
 	}
