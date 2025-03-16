@@ -2,6 +2,23 @@
 #include <string.h>
 #include "dog.h"
 /**
+ * _strcpy - Copies a string including the null terminator
+ * @dest: Destination buffer
+ * @src: Source string
+ * Return: Pointer to destination buffer
+ */
+char *_strcpy(char *dest, const char *src)
+{
+	char *ptr = dest;
+
+	while (*src)
+	{
+		*ptr++ = *src++;
+	}
+	*ptr = '\0';
+	return (dest);
+}
+/**
  * _strlen - Calculates the length of a string manually
  * @str: Input string
  *
