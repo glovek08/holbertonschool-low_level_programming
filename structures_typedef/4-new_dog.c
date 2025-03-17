@@ -1,65 +1,44 @@
 #include <stdlib.h>
-#include <string.h>
 #include "dog.h"
 /**
- * _strcpy - Copies a string including the null terminator
- * @dest: Destination buffer
- * @src: Source string
- * Return: Pointer to destination buffer
- */
-char *_strcpy(char *dest, const char *src)
-{
-	char *ptr = dest;
-
-	while (*src) *ptr++ = *src++;
-	*ptr = '\0';
-	return (dest);
-}
-/**
- * _strlen - Calculates the length of a string manually
- * @str: Input string
- *
- * Return: Length of the string (excluding null terminator)
- */
-int _strlen(const char *str)
-{
-	int len = 0;
-
-	while (str[len]) len++;
-	return (len);
-}
-
-/**
- * new_dog - creates a new god.
- * @name: the dog's name.
- * @age: the dog's age.
- * @owner: the dog's owner.
- *
- * Return: a new god.
+ * new_dog - Creates a new dog
+ * @name: The dog's name
+ * @age: The dog's age
+ * @owner: The dog's owner
+ * Return: Pointer to the newly created dog_t structure
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggy;
 	char *name_cpy, *owner_cpy;
+	int name_len = 0, owner_len = 0;
+	int i;
 
+	while (name[name_len]) name_len++;
+	while (owner[owner_len]) owner_len++;
+	
 	doggy = malloc(sizeof(dog_t));
 	if (!doggy) return (NULL);
-	name_cpy = malloc(_strlen(name) + 1);
+	
+	name_cpy = malloc(name_len + 1);
 	if (!name_cpy) {
 		free(doggy);
 		return (NULL);
 	}
-	owner_cpy = malloc(_strlen(owner) + 1);
+
+	owner_cpy = malloc(owner_len + 1);
 	if (!owner_cpy) {
 		free(name_cpy);
 		free(doggy);
 		return (NULL);
 	}
-	_strcpy(name_cpy, name);
-	_strcpy(owner_cpy, owner);
+
+	for (i = 0; i <= name_len; i++) name_cpy[i] = name[i];
+	for (i = 0; i <= owner_len; i++) owner_cpy[i] = owner[i];
+	
 	doggy->name = name_cpy;
 	doggy->age = age;
 	doggy->owner = owner_cpy;
+
 	return (doggy);
 }
-
