@@ -20,7 +20,10 @@ int main(int argc, char **argv)
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	if ((operator[0] == '/' || operator[0] == '%') && num2 == 0)
+	if (
+		((operator[0] == '/' || operator[0] == '%')
+		&& num2 == 0)
+		|| !num2)
 		return (98);
 
 	op_func = get_op_func(argv[2]);
