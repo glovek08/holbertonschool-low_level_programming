@@ -16,8 +16,10 @@ int main(int argc, char **argv)
 	char *operator = argv[2];
 
 	if (argc != 4)
+	{
+		printf("Error\n");
 		return (98);
-
+	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
@@ -26,7 +28,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (98);
 	}
-
 	op_func = get_op_func(argv[2]);
 
 	printf("%d\n", op_func(num1, num2));
