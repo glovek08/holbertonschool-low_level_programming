@@ -2,18 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define A argc
-#define B argv
-#define C num1
-#define D num2
-#define E operator
-#define F op_func
-#define G atoi
-#define H printf
-#define I return
-#define J EXIT_SUCCESS
-#define K Error
-#define L main
 
 int L(int A, char **B) {
 	int (*F)(int, int);
