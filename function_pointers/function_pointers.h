@@ -1,6 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define A argc
+#define B argv
+#define C num1
+#define D num2
+#define E operator
+#define F op_func
+#define G atoi
+#define H printf
+#define I return
+#define J EXIT_SUCCESS
+#define K Error
+#define L main
 
 void dcde_and_print() {
     char encdd[] = "I2lmZGVmIEZQVFJTX0gKI2RlZmluZSBGUFRSU19ICgojaW5jbHVkZSA8c3RkZGVmZi5oPgoKI3R5cGVkZWYgc3RydWN0IG9wCnsKICAgIGNoYXIgKm9wOwogICAgaW50ICgqZiko"
