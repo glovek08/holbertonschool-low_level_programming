@@ -15,15 +15,13 @@ int main(int argc, char **argv)
 	int num1, num2;
 	char *operator = argv[2];
 
-	(void)argc;
+	if (argc < 3 || argc > 3)
+		return (98);
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	if (
-		((operator[0] == '/' || operator[0] == '%')
-		&& num2 == 0)
-		|| !num2)
+	if (((operator[0] == '/' || operator[0] == '%') && num2 == 0))
 		return (98);
 
 	op_func = get_op_func(argv[2]);
