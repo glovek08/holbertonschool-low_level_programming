@@ -22,7 +22,10 @@ int main(int argc, char **argv)
 	num2 = atoi(argv[3]);
 
 	if (((operator[0] == '/' || operator[0] == '%') && num2 == 0))
+	{
+		printf("Error\n");
 		return (98);
+	}
 
 	op_func = get_op_func(argv[2]);
 
