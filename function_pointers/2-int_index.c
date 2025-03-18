@@ -12,7 +12,7 @@ int int_index(int *arr, int size, int (*cmp)(int))
 {
 	int i = 0;
 
-	if (!arr || size <= 0)
+	if (!arr || size <= 0 || !cmp)
 		return (-1);
 	for (; i < size; i++)
 	{
