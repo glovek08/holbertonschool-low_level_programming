@@ -15,6 +15,6 @@
 #### <ins>Task 4</ins>:
   - **3-main.c**: performs an arithmetic operation according to the given parameters.
   - **3-get_op_func.c**: selects the correct function to perform the operation asked by the user.
-  - **3-op_func.c**: holds all the arthitmetic functions inkoved by _3-get_op_func.c_.
+  - **3-op_functions.c**: holds all the arthitmetic functions inkoved by _3-get_op_func.c_.
   - **3-calc.h**: contains all function prototypes and struct _op_t_ typedef declaration.
   
