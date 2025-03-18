@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 		&& num2 == 0))
 	{
 		printf("Error\n");
-		return (98);
+		return (100);
 	}
 	op_func = get_op_func(argv[2]);
 
@@ -40,3 +40,4 @@ int main(int argc, char **argv)
 	printf("%d\n", op_func(num1, num2));
 	return (EXIT_SUCCESS);
 }
+
