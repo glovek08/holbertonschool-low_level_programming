@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	int num1, num2;
 	char *operator = argv[2];
 
-	if (argc < 3 || argc > 3)
+	if (argc != 4)
 		return (98);
 
 	num1 = atoi(argv[1]);
