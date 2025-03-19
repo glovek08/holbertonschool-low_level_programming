@@ -25,8 +25,9 @@ void print_strings(const char *separator, const unsigned int count, ...)
 			printf("(nil)\n");
 		else
 	       	{
-			printf("%s", word);
-			printf("%c", *separator);
+			printf("%s ", word);
+			if (i < (count - 1))
+			printf("%c ", *separator);
 		}
 	}
 	putchar('\n');
