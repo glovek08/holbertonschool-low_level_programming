@@ -26,8 +26,8 @@ void print_strings(const char *separator, const unsigned int count, ...)
 		else
 	       	{
 			printf("%s", word);
-			if (i < (count - 1))
-			printf("%c ", *separator);
+			if (i < (count - 1) && *separator != ' ')
+				printf("%c ", *separator);
 		}
 	}
 	putchar('\n');
