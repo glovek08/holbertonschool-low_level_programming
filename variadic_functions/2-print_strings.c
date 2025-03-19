@@ -21,12 +21,12 @@ void print_strings(const char *separator, const unsigned int count, ...)
 	{
 		word = va_arg(args, char *);
 
-		if (!word || )
+		if (!word)
 			printf("(nil)\n");
 		else
-	       	{
+		{
 			printf("%s", word);
-			if (i < (count - 1) && separator != '\0')
+			if (i < (count - 1) && *separator != '\0')
 				printf("%c ", *separator);
 		}
 	}
