@@ -14,16 +14,20 @@ void print_strings(const char *separator, const unsigned int count, ...)
 {
 	va_list args;
 	unsigned int i = 0;
-	char *word = (void *)0;
+	char *word;
 
 	va_start(args, count);
 	for (; i < count; i++)
 	{
-		strcpy(word, va_arg(args, char *));
-		if (word == (void *)0)
+		word = va_arg(args, char *);
+
+		if (!word)
 			printf("(nil)\n");
-		printf("%s", word);
-		printf("%c", *separator);
+		else
+	       	{
+			printf("%s", word);
+			printf("%c", *separator);
+		}
 	}
 	putchar('\n');
 	va_end(args);
