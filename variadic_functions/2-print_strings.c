@@ -20,15 +20,12 @@ void print_strings(const char *separator, const unsigned int count, ...)
 	for (; i < count; i++)
 	{
 		word = va_arg(args, char *);
-
 		if (!word)
-			printf("(nil)\n");
+			printf("(nil)");
 		else
-		{
 			printf("%s", word);
-			if (i < (count - 1) && *separator != '\0')
-				printf("%c ", *separator);
-		}
+		if (separator && *separator != '\0' && i < (count - 1))
+			printf("%s", separator);
 	}
 	putchar('\n');
 	va_end(args);
