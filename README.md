@@ -13,10 +13,12 @@ This is a introductory repository to begin working with the C programming langua
 
 ## IDE
 IDE? That's for noobs, for this project I'll be using **EMACS** and **Vim** as my main development environment. For that purpose, I've made use of <a href="https://github.com/amix/vimrc">Amix's</a> Vim configuration.
-<p align="left">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1088px-Vimlogo.svg.png" alt="Vim" width="40" height="40" title="Vim"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/1200px-EmacsIcon.svg.png" alt="Emacs" width="40" height="40" title="Emacs"/>
-</p>
+<div align="left">
+  
+  ![Static Badge](https://img.shields.io/badge/VIM-096828?style=plastic&logo=vim&logoColor=white&logoSize=auto&labelColor=019733)
+  ![Static Badge](https://img.shields.io/badge/EMACS-654298?style=plastic&logo=gnuemacs&logoColor=white&logoSize=auto&labelColor=%237F5AB6)
+  
+</div>
 
 ## Projects
 - [Hello World](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/hello_world)
