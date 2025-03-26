@@ -1,15 +1,12 @@
 #include "variadic_functions.h"
-#include <stdio.h>
 #include <stdarg.h>
+#include <stdio.h>
 #include <stdbool.h>
+
 /**
- * print_all - prints values based on the format string.
- * @format: list of types of arguments passed to the function.
- *           c: char, i: int, f: float, s: char* (prints (nil) if null).
- *           any other character is ignored.
- *
- * this function uses recursion to process the format string and
- * print the corresponding arguments.
+ * print_all - Prints arguments based on a format string.
+ * @format: Format specifiers (c=char, i=int, f=float, s=string).
+ *           Unknown chars are ignored. NULL strings print "(nil)".
  */
 void print_all(const char * const format, ...)
 {
@@ -22,33 +19,35 @@ void print_all(const char * const format, ...)
 
 	while (format && format[i])
 	{
-		if (!isFirst)
-			printf(", ");
-
-		switch (format[i])
+		if (format[i] == 'c'
+				|| format[i] == 'i'
+				|| format[i] == 'f'
+				|| format[i] == 's')
 		{
-		case 'c':
-			printf("%c", va_arg(args, int));
-			break;
-		case 'i':
-			printf("%i", va_arg(args, int));
-			break;
-		case 'f':
-			printf("%f", va_arg(args, double));
-			break;
-		case 's':
-			str = va_arg(args, char *);
-			printf("%s", str ? str : "(nil)");
-			break;
-		default:
-			i++;
-			continue;
+			if (!isFirst)
+				printf(", ");
+
+			switch (format[i])
+			{
+			case 'c':
+				printf("%c", va_arg(args, int));
+				break;
+			case 'i':
+				printf("%d", va_arg(args, int));
+				break;
+			case 'f':
+				printf("%f", va_arg(args, double));
+				break;
+			case 's':
+				str = va_arg(args, char *);
+				printf("%s", str ? str : "(nil)");
+				break;
+			}
+			isFirst = false;
 		}
-		isFirst = false;
 		i++;
 	}
 
 	va_end(args);
 	printf("\n");
 }
-
