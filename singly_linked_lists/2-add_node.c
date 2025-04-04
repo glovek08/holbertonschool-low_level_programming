@@ -2,6 +2,9 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <string.h>
+
+int _strlen(char *str);
+
 /**
  * add_node - adds a node to a given list.
  * @head: the first node of the list.
@@ -27,4 +30,20 @@ list_t *add_node(list_t **head, const char *str)
 	new_node->next = *head;
 	*head = new_node;
 	return (new_node);
+}
+/**
+ * _strlen - returns the length of a given string.
+ * @str: the given string.
+ *
+ * Return: str's length.
+ */
+int _strlen(char *str)
+{
+	int str_len = 0;
+
+	if (!str)
+		return (0);
+	while (str[str_len])
+		str_len++;
+	return (str_len);
 }
