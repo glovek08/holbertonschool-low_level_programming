@@ -1,58 +1,60 @@
-	.file	"2-main.c"
+	.file	"3-main.c"
 	.text
 	.section	.rodata
 .LC0:
-	.string	"Alexandro"
+	.string	"Anne"
 .LC1:
-	.string	"Asaia"
+	.string	"Colton"
 .LC2:
-	.string	"Augustin"
+	.string	"Corbin"
 .LC3:
-	.string	"Bennett"
-.LC4:
-	.string	"Bilal"
-.LC5:
-	.string	"Chandler"
-.LC6:
-	.string	"Damian"
-.LC7:
 	.string	"Daniel"
+.LC4:
+	.string	"Danton"
+.LC5:
+	.string	"David"
+.LC6:
+	.string	"Gary"
+.LC7:
+	.string	"Holden"
 .LC8:
-	.string	"Dora"
+	.string	"Ian"
 .LC9:
-	.string	"Electra"
+	.string	"Jay"
 .LC10:
-	.string	"Gloria"
+	.string	"Jennie"
 .LC11:
-	.string	"Joe"
+	.string	"Jimmy"
 .LC12:
-	.string	"John"
+	.string	"Justin"
 .LC13:
-	.string	"Josquin"
+	.string	"Kalson"
 .LC14:
-	.string	"Kris"
+	.string	"Kina"
 .LC15:
-	.string	"Marine"
+	.string	"Matthew"
 .LC16:
-	.string	"Mason"
+	.string	"Max"
 .LC17:
-	.string	"Praylin"
+	.string	"Michael"
 .LC18:
-	.string	"Rick"
+	.string	"Ntuj"
 .LC19:
-	.string	"Rona"
+	.string	"Philip"
 .LC20:
-	.string	"Siphan"
+	.string	"Richard"
 .LC21:
-	.string	"Sravanthi"
+	.string	"Samantha"
 .LC22:
-	.string	"Steven"
+	.string	"Stuart"
 .LC23:
-	.string	"Tasneem"
+	.string	"Swati"
 .LC24:
-	.string	"William"
+	.string	"Timothy"
 .LC25:
-	.string	"Zee"
+	.string	"Victor"
+.LC26:
+	.string	"Walton"
 	.text
 	.globl	main
 	.type	main, @function
@@ -74,142 +76,142 @@ main:
 	leaq	.LC0(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC1(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC2(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC3(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC4(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC5(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC6(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC7(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC8(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC8(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC9(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC10(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC11(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC12(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
-	leaq	-16(%rbp), %rax
-	leaq	.LC12(%rip), %rdx
-	movq	%rdx, %rsi
-	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC13(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC14(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC15(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC16(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC17(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC18(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
-	leaq	-16(%rbp), %rax
-	leaq	.LC18(%rip), %rdx
-	movq	%rdx, %rsi
-	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC19(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC20(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC21(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC22(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC23(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC24(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
 	leaq	-16(%rbp), %rax
 	leaq	.LC25(%rip), %rdx
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
-	call	add_node@PLT
+	call	add_node_end@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC26(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node_end@PLT
 	movq	-16(%rbp), %rax
 	movq	%rax, %rdi
 	call	print_list@PLT
