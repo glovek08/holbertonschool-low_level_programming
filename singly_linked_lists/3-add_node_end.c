@@ -31,7 +31,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	for (temp = *head; temp; temp = temp->next)
 		;
 	temp->next = new_node;
-	return (NULL);
+	return (new_node);
 }
 /**
  * _strlen - returns the length of a given string.
