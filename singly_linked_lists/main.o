@@ -1,0 +1,245 @@
+	.file	"2-main.c"
+	.text
+	.section	.rodata
+.LC0:
+	.string	"Alexandro"
+.LC1:
+	.string	"Asaia"
+.LC2:
+	.string	"Augustin"
+.LC3:
+	.string	"Bennett"
+.LC4:
+	.string	"Bilal"
+.LC5:
+	.string	"Chandler"
+.LC6:
+	.string	"Damian"
+.LC7:
+	.string	"Daniel"
+.LC8:
+	.string	"Dora"
+.LC9:
+	.string	"Electra"
+.LC10:
+	.string	"Gloria"
+.LC11:
+	.string	"Joe"
+.LC12:
+	.string	"John"
+.LC13:
+	.string	"Josquin"
+.LC14:
+	.string	"Kris"
+.LC15:
+	.string	"Marine"
+.LC16:
+	.string	"Mason"
+.LC17:
+	.string	"Praylin"
+.LC18:
+	.string	"Rick"
+.LC19:
+	.string	"Rona"
+.LC20:
+	.string	"Siphan"
+.LC21:
+	.string	"Sravanthi"
+.LC22:
+	.string	"Steven"
+.LC23:
+	.string	"Tasneem"
+.LC24:
+	.string	"William"
+.LC25:
+	.string	"Zee"
+	.text
+	.globl	main
+	.type	main, @function
+main:
+.LFB6:
+	.cfi_startproc
+	endbr64
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	subq	$16, %rsp
+	movq	%fs:40, %rax
+	movq	%rax, -8(%rbp)
+	xorl	%eax, %eax
+	movq	$0, -16(%rbp)
+	leaq	-16(%rbp), %rax
+	leaq	.LC0(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC1(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC2(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC3(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC4(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC5(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC6(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC7(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC8(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC9(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC10(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC11(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC12(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC12(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC13(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC14(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC15(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC16(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC17(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC18(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC18(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC19(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC20(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC21(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC22(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC23(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC24(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	leaq	-16(%rbp), %rax
+	leaq	.LC25(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	add_node@PLT
+	movq	-16(%rbp), %rax
+	movq	%rax, %rdi
+	call	print_list@PLT
+	movl	$0, %eax
+	movq	-8(%rbp), %rdx
+	subq	%fs:40, %rdx
+	je	.L3
+	call	__stack_chk_fail@PLT
+.L3:
+	leave
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE6:
+	.size	main, .-main
+	.ident	"GCC: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0"
+	.section	.note.GNU-stack,"",@progbits
+	.section	.note.gnu.property,"a"
+	.align 8
+	.long	1f - 0f
+	.long	4f - 1f
+	.long	5
+0:
+	.string	"GNU"
+1:
+	.align 8
+	.long	0xc0000002
+	.long	3f - 2f
+2:
+	.long	0x3
+3:
+	.align 8
+4:
