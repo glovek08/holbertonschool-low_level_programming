@@ -5,7 +5,7 @@
  * @n: the first number.
  * @m: the second number to compare with @n.
  *
- * Return: the amount of bits you would need to flip.
+ * Return: the amount of bits you would need to flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
@@ -14,8 +14,9 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while (difference != 0)
 	{
-		counter++;
+		if (difference & 1)
+			counter++;
 		difference >>= 1;
 	}
-	return (difference);
+	return (counter);
 }
