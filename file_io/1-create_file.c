@@ -13,7 +13,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0644);
+	int fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	ssize_t written_count = 0;
 
 	if (fd == -1)
