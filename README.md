@@ -33,7 +33,7 @@ IDE? That's for noobs, for this project I'll be using **EMACS** and **Vim** as m
 - [Singly Linked Lists](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/singly_linked_lists)
 - [Doubly Linked Lists](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/doubly_linked_lists)
 - [Bitwise Operations](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/bit_manipulation)
-- [File I/O](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/file_io)
+- [File I/O (POSIX)](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/file_io)
 
 
 Soooo I broke betty somewhere during my vim config, sorry for the messy code, she doesn't like indent. ¯\_(ツ)_/¯
