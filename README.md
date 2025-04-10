@@ -29,6 +29,11 @@ IDE? That's for noobs, for this project I'll be using **EMACS** and **Vim** as m
 - [Dynamic Memory Allocation](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/malloc_free)
 - [Structures and Typedef](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/structures_typedef)
 - [Function Pointers](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/function_pointers)
+- [Variadic Functions](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/variadic_functions)
+- [Singly Linked Lists](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/singly_linked_lists)
+- [Doubly Linked Lists](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/doubly_linked_lists)
+- [Bitwise Operations](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/bit_manipulation)
+- [File I/O](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/file_io)
 
 
 Soooo I broke betty somewhere during my vim config, sorry for the messy code, she doesn't like indent. ¯\_(ツ)_/¯
