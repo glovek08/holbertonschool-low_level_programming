@@ -1,11 +1,11 @@
 <p align="right">
   <img src="https://holberton.anahuac.mx/wp-content/uploads/2024/05/Group-359-1-1024x1024.png" alt="Hoblerton Logo" height="50" />
 </p>
-<h1 align="left">Holberton Low Level Programming.</h1>
+<h1 align="left">Low Level Programming.</h1>
 
 <h2>Low Level Programming with C</h2>
 
-This is a introductory repository to begin working with the C programming language. Part of Holberton's introduction into Computer Science.
+This is a introductory repository to begin working with the C programming language.
 
 ## Table of Contents
 - [IDE](#ide)
