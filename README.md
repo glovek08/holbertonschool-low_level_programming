@@ -1,11 +1,11 @@
 <p align="right">
   <img src="https://holberton.anahuac.mx/wp-content/uploads/2024/05/Group-359-1-1024x1024.png" alt="Hoblerton Logo" height="50" />
 </p>
-<h1 align="left">Holberton Low Level Programming.</h1>
+<h1 align="left">Low Level Programming.</h1>
 
 <h2>Low Level Programming with C</h2>
 
-This is a introductory repository to begin working with the C programming language. Part of Holberton's introduction into Computer Science.
+This is a introductory repository to begin working with the C programming language.
 
 ## Table of Contents
 - [IDE](#ide)
@@ -29,6 +29,11 @@ IDE? That's for noobs, for this project I'll be using **EMACS** and **Vim** as m
 - [Dynamic Memory Allocation](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/malloc_free)
 - [Structures and Typedef](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/structures_typedef)
 - [Function Pointers](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/function_pointers)
+- [Variadic Functions](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/variadic_functions)
+- [Singly Linked Lists](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/singly_linked_lists)
+- [Doubly Linked Lists](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/doubly_linked_lists)
+- [Bitwise Operations](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/bit_manipulation)
+- [File I/O (POSIX)](https://github.com/glovek08/holbertonschool-low_level_programming/tree/main/file_io)
 
 
 Soooo I broke betty somewhere during my vim config, sorry for the messy code, she doesn't like indent. ¯\_(ツ)_/¯
