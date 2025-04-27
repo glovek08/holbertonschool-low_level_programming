@@ -13,7 +13,7 @@
 int main(int argc, char **argv)
 {
 	int file_from, file_to;
-	ssize_t r, w;
+	ssize_t r;
 	char buf[1024];
 
 	if (argc != 3)
